@@ -13,7 +13,7 @@ const StatsCards = () => {
   ]
 
   return (
-    <div className='grid  grid-cols-7 m-1 mb-6 bg-white overflow-hidden rounded-lg border border-gray-200'>
+    <div className='flex flex-wrap justify-between m-1 mb-6 bg-white overflow-hidden rounded-lg border border-gray-200'>
       {
         stats.map((stat, index) => (
           <div key={index} className='py-3  text-left px-6 '>

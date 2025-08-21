@@ -97,12 +97,12 @@ const LeadsContent = () => {
   return (
     <main className='flex-1 p-6'>
       <div className="mb-6">
-        <div className="flex items-center justify-between mb-2 ms-2">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 ms-2">
           <div className="flex flex-col items-start justify-between">
             <h2 className="text-xl font-bold text-gray-900">LeadsManagement</h2>
             <h3 className='text-gray-500 text-sm font-medium mt-1'>Organize leads and track their progress effectively here</h3>
           </div>
-          <div className="flex items-center space-x-3">
+          <div className="flex flex-col mt-4 sm:mt-0 sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
             <button onClick={() => setIsModelOpen(true)} className='bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-700'>
               <Plus className='w-4 h-4' />
               <span className='font-medium'>New Leads</span>

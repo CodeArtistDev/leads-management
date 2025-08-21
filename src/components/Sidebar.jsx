@@ -16,7 +16,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="w-24  bg-white border-r border-gray-200 flex flex-col justify-between">
+    <div className="hidden md:block w-24  bg-white border-r border-gray-200 flex flex-col justify-between">
         <div className="p-6 mb-4 border border-gray-200 flex items-center justify-center">
             <Globe className='w-8 h-8  text-blue-600' />
         </div>

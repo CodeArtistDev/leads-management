@@ -9,13 +9,16 @@ const Header = () => {
     <header className='h-20.5 w-full bg-white border-b border-gray-200 px-6 py-4'>
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-4">
-          <AlignLeft />
-          <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden w-100">
+          <AlignLeft className='block md:hidden cursor-pointer'/>
+          <div className="hidden md:flex items-center border border-gray-300 rounded-lg overflow-hidden flex-1">
             <button className='pl-3 text-gray-500 flex items-center cursor-pointer'>
             <Search className='w-5 h-5 '/>
             </button>
-            <input type="text" placeholder='Search' className='flex-1 px-2 py-2 ouline-none focus:outline-none ' />
+            <input type="text" placeholder='Search' className='flex-1 px-2 py-2 ouline-none focus:outline-none ' />  
           </div>
+          <button className="md:hidden p-2 text-gray-500 hover:text-gray-800">
+            <Search className="w-5 h-5" />
+          </button>
           
         </div>
         <div className="flex items-center space-x-4">
